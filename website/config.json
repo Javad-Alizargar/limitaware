@@ -3,7 +3,7 @@
   "site_url": "https://wqp.statwhy.com",
   "tagline": "Traceable preparation of WQP result exports for censored-data analysis",
   "version_source": "installed package",
-  "repository_url": null,
+  "repository_url": "https://github.com/Javad-Alizargar/limitaware",
   "archive_doi": null,
   "contact_email": "8javad@ntunhs.edu.tw",
   "evaluated_version": "0.1.4",

@@ -56,6 +56,10 @@ methods are admissible, unit conversion, below-LOQ handling and duplicates. See
 `docs/POLICIES.md`. Policies are not rankings: a stricter policy is not
 scientifically superior.
 
+## Repository
+
+Public software repository: https://github.com/Javad-Alizargar/limitaware
+
 ## Verification scopes
 
 **A. Software installation and software-only verification (works from this public
