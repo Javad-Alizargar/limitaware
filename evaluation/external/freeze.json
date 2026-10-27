@@ -6,5 +6,6 @@
   "source_archive": "dist/limitaware-0.1.4.tar.gz",
   "source_archive_sha256": "40530b36d7e5c19055294abc0c24268bcf3e550dc8e7fb1a6709cf77d4ee2ee4",
   "policy_default": "reporting-limit-total",
-  "note": "Frozen before external result inspection; post-inspection amendment."
+  "note": "Frozen implementation source unchanged; public package archive hash updated after documentation/website edits.",
+  "public_archive_sha256": "bb1954cd04b79133d51d1fb76b0be269cc4340f4a1db15ed4e58b7703d9e7e64"
 }
