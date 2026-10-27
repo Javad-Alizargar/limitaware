@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-27",
+  "implementation": "limitaware 0.1.4",
+  "archive": "dist/limitaware-0.1.4-public.tar.gz",
+  "archive_sha256": "396eac24f755d338646b576afec8800cc0e7fca103a8576adce6db1725b43f96",
+  "source_archive": "dist/limitaware-0.1.4.tar.gz",
+  "source_archive_sha256": "40530b36d7e5c19055294abc0c24268bcf3e550dc8e7fb1a6709cf77d4ee2ee4",
+  "policy_default": "reporting-limit-total",
+  "note": "Frozen before external result inspection; post-inspection amendment."
+}

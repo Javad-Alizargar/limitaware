@@ -1,0 +1,153 @@
+{
+  "date": "2026-10-27",
+  "workflow": "EPATADA 0.0.1 AutoClean + RunKeyFlagFunctions + IDCensoredData; unmatched = same task filters without condition/missing-limit normalization; matched = documented policy adapter",
+  "exports": {
+    "illinois": {
+      "rows": 256,
+      "la_eligible": 181,
+      "native_eligible": 181,
+      "matched_eligible": 181,
+      "matched_both": 181,
+      "matched_censoring_agree": 181,
+      "matched_groups_agree_rows": 181,
+      "matched_value_max_abs_diff": 0.0,
+      "native_la_only": 0,
+      "native_ep_only": 0
+    },
+    "indiana": {
+      "rows": 357,
+      "la_eligible": 55,
+      "native_eligible": 55,
+      "matched_eligible": 55,
+      "matched_both": 55,
+      "matched_censoring_agree": 55,
+      "matched_groups_agree_rows": 55,
+      "matched_value_max_abs_diff": 0.0,
+      "native_la_only": 0,
+      "native_ep_only": 0
+    },
+    "minnesota": {
+      "rows": 735,
+      "la_eligible": 630,
+      "native_eligible": 630,
+      "matched_eligible": 630,
+      "matched_both": 630,
+      "matched_censoring_agree": 630,
+      "matched_groups_agree_rows": 630,
+      "matched_value_max_abs_diff": 0.0,
+      "native_la_only": 0,
+      "native_ep_only": 0
+    },
+    "wisconsin": {
+      "rows": 368,
+      "la_eligible": 265,
+      "native_eligible": 265,
+      "matched_eligible": 265,
+      "matched_both": 265,
+      "matched_censoring_agree": 265,
+      "matched_groups_agree_rows": 265,
+      "matched_value_max_abs_diff": 0.0,
+      "native_la_only": 0,
+      "native_ep_only": 0
+    },
+    "mississippi": {
+      "rows": 59,
+      "la_eligible": 52,
+      "native_eligible": 52,
+      "matched_eligible": 52,
+      "matched_both": 52,
+      "matched_censoring_agree": 52,
+      "matched_groups_agree_rows": 52,
+      "matched_value_max_abs_diff": 0.0,
+      "native_la_only": 0,
+      "native_ep_only": 0
+    },
+    "iowa": {
+      "rows": 933,
+      "la_eligible": 237,
+      "native_eligible": 261,
+      "matched_eligible": 237,
+      "matched_both": 237,
+      "matched_censoring_agree": 237,
+      "matched_groups_agree_rows": 237,
+      "matched_value_max_abs_diff": 0.0,
+      "native_la_only": 9,
+      "native_ep_only": 33
+    },
+    "new_york": {
+      "rows": 140,
+      "la_eligible": 120,
+      "native_eligible": 120,
+      "matched_eligible": 120,
+      "matched_both": 120,
+      "matched_censoring_agree": 120,
+      "matched_groups_agree_rows": 120,
+      "matched_value_max_abs_diff": 0.0,
+      "native_la_only": 0,
+      "native_ep_only": 0
+    },
+    "ohio": {
+      "rows": 27,
+      "la_eligible": 13,
+      "native_eligible": 13,
+      "matched_eligible": 13,
+      "matched_both": 13,
+      "matched_censoring_agree": 13,
+      "matched_groups_agree_rows": 13,
+      "matched_value_max_abs_diff": 0.0,
+      "native_la_only": 0,
+      "native_ep_only": 0
+    }
+  },
+  "totals": {
+    "rows": 2875,
+    "la_eligible": 1553,
+    "native_eligible": 1577,
+    "matched_eligible": 1553,
+    "both_matched": 1553,
+    "la_only_native": 9,
+    "ep_only_native": 33,
+    "censored_match": 1553,
+    "eligible_match": 1553,
+    "group_match": 1553,
+    "value_maxdiff": 0.0
+  },
+  "native_disagreement_categories": {
+    "LA eligible / EP native not eligible: eligible -> missing_value": 9,
+    "LA not eligible / EP native eligible: missing_limit -> eligible": 22,
+    "LA not eligible / EP native eligible: excluded_estimated -> eligible": 2,
+    "LA not eligible / EP native eligible: excluded_qc -> eligible": 9
+  },
+  "reconciliation": {
+    "totals": {
+      "both_eligible": 1544,
+      "limitaware_only": 9,
+      "epatada_unmatched_only": 33,
+      "neither_eligible": 1289
+    },
+    "diagnostic_categories": {
+      "neither eligible": 1289,
+      "both eligible": 1544,
+      "LA missing_limit / unmatched eligible": 22,
+      "LA eligible / unmatched missing_value": 9,
+      "LA excluded_estimated / unmatched eligible": 2,
+      "LA excluded_qc / unmatched eligible": 9
+    },
+    "censoring": {
+      "both_eligible_disagreements": 0,
+      "both_eligible_agreements": 1544,
+      "status_discordant_rows": 42,
+      "status_discordant_censoring_disagreements": 31,
+      "matched_eligible_records": 1553,
+      "matched_censoring_agreements": 1553,
+      "matched_group_agreements": 1553,
+      "matched_value_agreements": 1553
+    },
+    "overlap": {},
+    "notes": [
+      "The 9 LA-eligible/unmatched non-detects are not in the unmatched eligible set: they are censored in LimitAware but left uncensored and missing-valued by the unmatched workflow. They are therefore both an eligibility and a censoring discrepancy.",
+      "The 22 DL rows without limits, 2 estimated rows and 9 field-measurement rows are EPATADA-unmatched-only; they are not included in the nine.",
+      "The 42 category records are not the net difference (33 - 9 = 24). Category membership is disjoint and is reported explicitly."
+    ]
+  }
+}

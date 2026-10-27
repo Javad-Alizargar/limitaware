@@ -1,0 +1,98 @@
+{
+  "selected": [
+    {
+      "state": "US:17",
+      "state_name": "Illinois",
+      "analyte": "Atrazine",
+      "file": "illinois_atrazine_2022.csv",
+      "url": "https://www.waterqualitydata.us/data/Result/search?statecode=US%3A17&characteristicName=Atrazine&startDateLo=01-01-2022&startDateHi=12-31-2022&mimeType=csv&zip=no",
+      "http": "200",
+      "bytes": 114481,
+      "rows": 256,
+      "cols": 63,
+      "fractions": {
+        "Dissolved": 74,
+        "Recoverable": 1,
+        "Total": 181
+      },
+      "overlap_pairs": 0,
+      "overlap_frac": 0.0,
+      "digest": "746999b83122bb43aa9cda58ae53070c9ce110e82eeca265c56c3227cadbe955",
+      "selected": true
+    },
+    {
+      "state": "US:18",
+      "state_name": "Indiana",
+      "analyte": "Metolachlor",
+      "file": "indiana_metolachlor_2022.csv",
+      "url": "https://www.waterqualitydata.us/data/Result/search?statecode=US%3A18&characteristicName=Metolachlor&startDateLo=01-01-2022&startDateHi=12-31-2022&mimeType=csv&zip=no",
+      "http": "200",
+      "bytes": 149433,
+      "rows": 357,
+      "cols": 63,
+      "fractions": {
+        "Dissolved": 66,
+        "Total": 291
+      },
+      "overlap_pairs": 0,
+      "overlap_frac": 0.0,
+      "digest": "7a597ab9d3588eb43db0efce36cb72c19e6c3adb488a0ef970bb0c305a7f7c05",
+      "selected": true
+    },
+    {
+      "state": "US:27",
+      "state_name": "Minnesota",
+      "analyte": "2,4-D",
+      "file": "minnesota_24_d_2022.csv",
+      "url": "https://www.waterqualitydata.us/data/Result/search?statecode=US%3A27&characteristicName=2%2C4-D&startDateLo=01-01-2022&startDateHi=12-31-2022&mimeType=csv&zip=no",
+      "http": "200",
+      "bytes": 515716,
+      "rows": 735,
+      "cols": 63,
+      "fractions": {
+        "Dissolved": 36,
+        "Total": 699
+      },
+      "overlap_pairs": 0,
+      "overlap_frac": 0.0,
+      "digest": "a642b558d4092603b10779f131ac1c9dbe1db6c27fbe5c3ce78eb291693ec648",
+      "selected": true
+    },
+    {
+      "state": "US:55",
+      "state_name": "Wisconsin",
+      "analyte": "Metolachlor",
+      "file": "wisconsin_metolachlor_2022.csv",
+      "url": "https://www.waterqualitydata.us/data/Result/search?statecode=US%3A55&characteristicName=Metolachlor&startDateLo=01-01-2022&startDateHi=12-31-2022&mimeType=csv&zip=no",
+      "http": "200",
+      "bytes": 274107,
+      "rows": 368,
+      "cols": 63,
+      "fractions": {
+        "Total": 368
+      },
+      "overlap_pairs": 0,
+      "overlap_frac": 0.0,
+      "digest": "107cc0fef74eda3fe64858fafb41cf38d33e8beefa93177c6afc2d9c02e94b53",
+      "selected": true
+    },
+    {
+      "state": "US:28",
+      "state_name": "Mississippi",
+      "analyte": "Atrazine",
+      "file": "mississippi_atrazine_2022.csv",
+      "url": "https://www.waterqualitydata.us/data/Result/search?statecode=US%3A28&characteristicName=Atrazine&startDateLo=01-01-2022&startDateHi=12-31-2022&mimeType=csv&zip=no",
+      "http": "200",
+      "bytes": 40458,
+      "rows": 59,
+      "cols": 63,
+      "fractions": {
+        "Dissolved": 59
+      },
+      "overlap_pairs": 0,
+      "overlap_frac": 0.0,
+      "digest": "77b783d753bd1c3f167606b1d00f179047ba9ce72d4cb94a724cd006096aa1a2",
+      "selected": true
+    }
+  ]
+}

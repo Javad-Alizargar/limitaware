@@ -1,0 +1,29 @@
+{
+  "illinois": {
+    "both_uncensored": 180,
+    "both_censored": 67,
+    "epatada_censored_only": 9
+  },
+  "minnesota": {
+    "both_uncensored": 412,
+    "both_censored": 323
+  },
+  "indiana": {
+    "both_uncensored": 124,
+    "epatada_censored_only": 233
+  },
+  "wisconsin": {
+    "both_censored": 269,
+    "both_uncensored": 99
+  },
+  "mississippi": {
+    "both_uncensored": 56,
+    "both_censored": 3
+  },
+  "iowa": {
+    "both_uncensored": 532,
+    "both_censored": 334,
+    "epatada_missing_condition": 22,
+    "epatada_censored_only": 45
+  }
+}

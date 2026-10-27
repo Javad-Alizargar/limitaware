@@ -1,0 +1,48 @@
+{
+  "C01": {
+    "status": "excluded_qc",
+    "eligible": false
+  },
+  "C02": {
+    "status": "unsupported_right_censored",
+    "eligible": false
+  },
+  "C03": {
+    "status": "eligible",
+    "eligible": true
+  },
+  "C04": {
+    "status": "nonfinite_value",
+    "eligible": false
+  },
+  "C05": {
+    "status": "conflicting_bound",
+    "eligible": false
+  },
+  "C06": {
+    "status": "excluded_estimated",
+    "eligible": false
+  },
+  "C07": {
+    "status": "excluded_rejected",
+    "eligible": false
+  },
+  "C08": {
+    "status": "unsupported_interval_censored",
+    "eligible": false
+  },
+  "C09": {
+    "status": "eligible",
+    "eligible": true,
+    "observation": 0.1
+  },
+  "C10": {
+    "status": "eligible",
+    "eligible": true,
+    "observation": 0.2
+  },
+  "C11": {
+    "status": "missing_limit",
+    "eligible": false
+  }
+}

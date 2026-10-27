@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use LimitAware, cite the evaluated software release and the SoftwareX article."
+title: "LimitAware: traceable preparation of Water Quality Portal result exports"
+abstract: "Documented, policy-driven preparation of WQP result exports for censored-data analysis, with canonical, grouped and audit outputs."
+type: software
+repository-code: "https://github.com/Javad-Alizargar/limitaware"
+url: "https://wqp.statwhy.com"
+authors:
+  - family-names: Alizargar
+    given-names: Javad
+    orcid: https://orcid.org/0000-0003-2966-1315
+    affiliation: "Department of Nursing, National Taipei University of Nursing and Health Sciences, Taipei, Taiwan"
+version: 0.1.4
+date-released: 2026-10-26
+license: MIT
+keywords:
+  - censored data
+  - water quality
+  - reporting limits
+  - provenance
+  - reproducibility

@@ -1,0 +1,4 @@
+{"admissible_fractions": ["Total"], "admissible_methods": null,
+ "require_actual_value_type": true, "duplicates": "keep",
+ "estimated_results": "exclude", "below_loq": "exclude",
+ "limit_roles": ["reporting"], "qc": "exclude"}

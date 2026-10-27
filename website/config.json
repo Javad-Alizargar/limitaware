@@ -1,0 +1,11 @@
+{
+  "site_name": "LimitAware",
+  "site_url": "https://wqp.statwhy.com",
+  "tagline": "Traceable preparation of WQP result exports for censored-data analysis",
+  "version_source": "installed package",
+  "repository_url": null,
+  "archive_doi": null,
+  "contact_email": "8javad@ntunhs.edu.tw",
+  "evaluated_version": "0.1.4",
+  "deployment_note": "Living demo; the evaluated release is the immutable archive, not this website."
+}

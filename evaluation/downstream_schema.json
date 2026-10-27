@@ -1,0 +1,12 @@
+{
+  "fields": ["export","policy","group","n","n_detected","n_censored",
+             "distinct_censoring_limits","median","mean","mean_se",
+             "mean_lcl","mean_ucl","fit_status","warning","failure_reason"],
+  "numeric": ["n","n_detected","n_censored","distinct_censoring_limits",
+              "median","mean","mean_se","mean_lcl","mean_ucl"],
+  "missing": "NA",
+  "fit_status": ["ok","ok_median_not_identified","skipped_insufficient_detects",
+                 "skipped_no_censoring","skipped_no_limit","r_error",
+                 "invalid_nonfinite","malformed_output"],
+  "notes": "One row per export/policy/group. Numeric fields use NA when not applicable. fit_status must be one of the enum. A successful replay requires every row to validate and no r_error/malformed_output/invalid_nonfinite status."
+}

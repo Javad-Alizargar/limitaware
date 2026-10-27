@@ -1,0 +1,24 @@
+{
+  "policy_version": "1.1",
+  "name": "reporting_total-dropduplicates",
+  "admissible_fractions": [
+    "Total"
+  ],
+  "admissible_methods": null,
+  "units": {
+    "target": "ug/L",
+    "conversions": {
+      "ug/l": 1.0,
+      "ug/L": 1.0,
+      "ng/l": 0.001,
+      "ng/L": 0.001
+    }
+  },
+  "censoring_limit_roles": [
+    "reporting"
+  ],
+  "below_loq": "exclude",
+  "duplicates": "drop_identical",
+  "qc_activities": "exclude",
+  "treat_missing_limit_for_detected": "allow"
+}

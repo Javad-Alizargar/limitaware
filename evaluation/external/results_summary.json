@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-27",
+  "status": "frozen external evaluation (post-inspection amendment)",
+  "implementation": "limitaware 0.1.4",
+  "exports": {
+    "georgia_metolachlor_2023": {
+      "export": "Georgia",
+      "source_rows": 61,
+      "target_fraction": "Dissolved",
+      "policy": "reporting_dissolved_P0.json",
+      "source_sha256": "207894308106225f034cde308a1c975222758c41236c5fa246982f06becd6454",
+      "status_counts": {
+        "eligible": 45,
+        "excluded_limit_role": 7,
+        "excluded_qc": 9
+      },
+      "eligible": 45,
+      "censored": 26,
+      "unresolved": 0,
+      "groups": {
+        "{\"analyte\": \"Metolachlor\", \"fraction\": \"Dissolved\", \"method\": \"LCM60\"}": 45
+      },
+      "fit": {
+        "n": 45,
+        "detected": 19,
+        "censored": 26,
+        "median": 0.0022999999999999,
+        "mean": 0.0185116666666667,
+        "se": 0.0158778365778124,
+        "lcl": -0.0126083211782584,
+        "ucl": 0.0496316545115917,
+        "status": "ok"
+      },
+      "overlap_activity_keys": 0
+    },
+    "oregon_24_d_2023": {
+      "export": "Oregon",
+      "source_rows": 348,
+      "target_fraction": "Extractable",
+      "policy": "reporting_extractable_P0.json",
+      "source_sha256": "9b4c7b8463e7b6f678dd30ac9de9d06d48b6e0cc48c4ca20904c4fa0b471563a",
+      "status_counts": {
+        "ambiguous_qualifier": 5,
+        "conflicting_qualifier": 57,
+        "eligible": 196,
+        "excluded_fraction": 42,
+        "excluded_qc": 48
+      },
+      "eligible": 196,
+      "censored": 180,
+      "unresolved": 62,
+      "groups": {
+        "{\"analyte\": \"2,4-D\", \"fraction\": \"Extractable\", \"method\": \"6640-B\"}": 196
+      },
+      "fit": {
+        "n": 196,
+        "detected": 16,
+        "censored": 180,
+        "median": null,
+        "mean": 0.126020408163265,
+        "se": 0.0094808983500517,
+        "lcl": 0.107438188856079,
+        "ucl": 0.144602627470452,
+        "status": "ok_median_not_identified"
+      },
+      "overlap_activity_keys": 0
+    }
+  },
+  "not_retained": {
+    "vermont_atrazine_2023": {
+      "state": "Vermont",
+      "characteristic": "Atrazine",
+      "rows": 0,
+      "reason": "zero-row WQP response; protocol required at least 20 rows; no value substitution"
+    }
+  },
+  "interval_note": "Fits use NADA 1.6-1.2 cenfit mean: area under the KM curve, unconstrained normal-approximation interval. Georgia LCL -0.0126 is not a physical concentration bound; main text uses point estimates only."
+}

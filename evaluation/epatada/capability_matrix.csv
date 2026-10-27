@@ -1,0 +1,14 @@
+capability,LimitAware 0.1.4,EPATADA 0.0.1,configured baseline
+WQP result retrieval,no (accepts a delivered CSV),yes (TADA_DataRetrieval),no
+Documented condition/qualifier/limit vocabulary,yes (WQX domain mappings),yes (TADA reference tables),partial (hard-coded)
+Preserves limit roles for analysis,yes (mdl/reporting/loq/other),TADA_IDCensoredData uses one combined Non-Detect classification flag; DetectionQuantitationLimitTypeName is retained in the dataframe,no
+Condition-limit conflict flags,bound/qualifier conflicts; limit-role policy,condition vs limit class; excludes conflicts,yes for bound conflicts
+Undocumented vocabulary,per-row refusal statuses,"Censored but not Categorized",per-row status
+Unit conversion,policy table incl. lower/upper-case aliases,separate TADA_ConvertResultUnits from WQX reference,fixed table
+Missing value/unit,evidence-dependent rule + flag,copies limit value/unit when result flagged NA,limited
+Eligibility policy (fraction/QC/value type/role/below-LOQ/duplicates),yes,not in TADA_IDCensoredData; separate package filters exist but a full workflow was not evaluated,yes per config
+Grouped analysis inputs,yes (analyte/fraction/method),not in the inspected function; package-wide workflow not assessed,yes
+Per-row audit and provenance,audit.json/manifest/input digest,TADA dataframe retains source fields and flags; package-wide provenance workflow not assessed,prepared CSV + audit JSON
+Identifier,organisation + CSV line,requires ResultIdentifier (TADA-created),row number
+Interface,Python CLI + API,R functions,Python script
+Runtime dependencies,standard library only,R and many packages,standard library

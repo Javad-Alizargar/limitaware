@@ -1,0 +1,8 @@
+{% extends "base.html" %}{% block content %}
+<h1>Evaluation summary</h1>
+<p>Five held-out exports (1,775 rows) were selected by a frozen rule after three development exports. They are not a probability sample. The post-repair coverage comparison is development evidence, not an untouched test of the new rules.</p>
+<table><tr><th>Export</th><th>Rows</th><th>Eligible 0.1.4</th><th>Unresolved</th></tr>
+{% for name, d in summary.items() %}<tr><td>{{ name }}</td><td>{{ d.rows }}</td><td>{{ d.eligible }}</td><td>{{ d.unresolved }}</td></tr>{% endfor %}</table>
+<p>An independently implemented, same-specification baseline produced identical eligible sets, observations, censoring and grouping on eight exports. This is a reproducibility check, not independent scientific validation. No human expert labels exist.</p>
+<p>Full methods, tables and limitations are in the manuscript and supplement. The demo does not produce estimator results.</p>
+{% endblock %}

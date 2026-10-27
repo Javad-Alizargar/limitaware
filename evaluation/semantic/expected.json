@@ -1,0 +1,17 @@
+{
+  "S01": {"status":"eligible","eligible":true,"censored":true,"observation":0.1,"basis":"WQX condition Not Detected + numeric reporting limit; condition and limit support a left-censored observation."},
+  "S02": {"status":"missing_limit","eligible":false,"censored":true,"basis":"WQX DL documents non-detection, but no threshold is present; status records refusal rather than inventing a bound."},
+  "S03": {"status":"excluded_below_loq","eligible":false,"censored":false,"basis":"Present Below Quantification Limit is excluded by the default below-LOQ policy."},
+  "S04": {"status":"excluded_estimated","eligible":false,"censored":false,"basis":"J/estimated result is not treated as an exact detected value under the default policy."},
+  "S05": {"status":"excluded_limit_role","eligible":false,"censored":true,"basis":"LOQ role is not in the reporting-only censoring roles; role is retained."},
+  "S06": {"status":"eligible","eligible":true,"censored":false,"observation":1.0,"basis":"ng/L converts to ug/L by 0.001; detected value is eligible."},
+  "S07": {"status":"excluded_limit_role","eligible":false,"censored":true,"basis":"Unknown limit type is not forced into a reporting role; refusal is explicit."},
+  "S08": {"status":"conflicting_qualifier","eligible":false,"censored":false,"basis":"Embedded < and coded > disagree; no precedence is invented."},
+  "S09": {"status":"excluded_qc","eligible":false,"censored":false,"basis":"Quality-control activity is excluded from routine environmental samples."},
+  "S10": {"status":"excluded_qc","eligible":false,"censored":false,"basis":"Field Msr/Obs is treated as a non-routine activity and retained under the excluded_qc branch; status_detail identifies the activity, so this is not a claim that every field measurement is a QC sample."},
+  "S11": {"status":"excluded_fraction","eligible":false,"censored":false,"basis":"Target fraction is Total under the default policy."},
+  "S12": {"status":"eligible","eligible":true,"censored":false,"observation":0.25,"basis":"Exact detected numeric result; no limit needed."},
+  "S13": {"status":"unsupported_right_censored","eligible":false,"censored":false,"basis":"Right-censored result is outside the left-censored analysis input; raw qualifier retained."},
+  "S14": {"status":"excluded_value_type","eligible":false,"censored":false,"basis":"ResultValueTypeName Other is not an actual result under the default policy."},
+  "S15": {"status":"ambiguous_missing_value","eligible":false,"censored":false,"basis":"Detected condition without a numeric value is unresolved, not filled."}
+}

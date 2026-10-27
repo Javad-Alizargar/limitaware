@@ -1,0 +1,15 @@
+{% extends "base.html" %}{% block content %}
+<h1>Interpretation result</h1>
+<p><strong>{{ meta.filename }}</strong> · policy <code>{{ meta.policy }}</code> · {{ meta.rows }} rows · input SHA-256 <code>{{ meta.input_sha256[:16] }}…</code></p>
+<table><tr><th>Status</th><th>Rows</th></tr>
+{% for k, v in meta.audit.summary.status_counts.items() %}<tr><td>{{ k }}</td><td>{{ v }}</td></tr>{% endfor %}</table>
+<p>Eligible: <strong>{{ meta.audit.summary.analysis_rows }}</strong> · censored among eligible: {{ meta.audit.summary.censored_rows }} · unresolved: {{ meta.audit.summary.unresolved_rows }} · groups: {{ meta.manifest.groups|length }}.</p>
+<h2>Groups</h2>
+<table><tr><th>Group key</th><th>Rows</th><th>Censored</th><th>File</th></tr>
+{% for k, v in meta.manifest.groups.items() %}<tr><td><code>{{ k }}</code></td><td>{{ v.rows }}</td><td>{{ v.censored }}</td><td>{{ v.file }}</td></tr>{% endfor %}</table>
+<h2>Representative rows</h2>
+<table><tr><th>Row</th><th>Status</th><th>Observation</th><th>Censored</th><th>Flags</th><th>Group</th></tr>
+{% for r in meta.sample %}<tr><td>{{ r.source_row }}</td><td>{{ r.status }}</td><td>{{ r.observation }}</td><td>{{ r.censored }}</td><td>{{ r.flags }}</td><td><code>{{ r.analysis_group }}</code></td></tr>{% endfor %}</table>
+<p><a class="btn" href="/download/{{ token }}">Download outputs (ZIP)</a></p>
+<p class="small">The ZIP contains canonical.csv, raw_records.csv, per-group analysis files, analysis_manifest.json, audit.json, methods_note.md and policy.json. It expires after 10 minutes or when the service restarts.</p>
+{% endblock %}

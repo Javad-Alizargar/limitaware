@@ -1,0 +1,179 @@
+{
+  "version": "0.1.4",
+  "description": "Files required for a complete study replay; held-out WQP CSVs are not redistributable without confirmation.",
+  "files": [
+    {
+      "path": "evaluation/expanded/selection_final.json",
+      "sha256": "9aecee9680a92642249da92ccd564a07cd44ddb9dc450ef77eee0a509d9eb1ad",
+      "size": 3207,
+      "role": "reference/configuration"
+    },
+    {
+      "path": "evaluation/expanded/selection_log.json",
+      "sha256": "5635fc97f674f31cfde02d5bf9c8734b414781d77e7ac0891200dc5ccbb682d3",
+      "size": 11361,
+      "role": "reference/configuration"
+    },
+    {
+      "path": "evaluation/EXPANDED_PROTOCOL.md",
+      "sha256": "41543669c8864df46be6f78aa6fac2e73391546c64f4e8175622ace63851a962",
+      "size": 9168,
+      "role": "reference/configuration"
+    },
+    {
+      "path": "evaluation/EXPANDED_PROTOCOL.sha256",
+      "sha256": "c7df3da0abd7fbe94220c5b978461f36349c6f2aab4399b2a294882b18f6a494",
+      "size": 98,
+      "role": "reference/configuration"
+    },
+    {
+      "path": "evaluation/EXPANDED_DEVIATIONS.md",
+      "sha256": "57fa2fe82adb296f4c8cb951081e8d12ad30ea8f5b921af7c83eb29f9767ab9c",
+      "size": 1510,
+      "role": "reference/configuration"
+    },
+    {
+      "path": "evaluation/expanded/policy_results/policy_summary.json",
+      "sha256": "0025bf195f5c54ccd6c468b700f2b6e60dfc2237d7f0c07c8a90b3cec04a917e",
+      "size": 22349,
+      "role": "reference/configuration"
+    },
+    {
+      "path": "evaluation/expanded/downstream.tsv",
+      "sha256": "1b6b67aac45426fae7f6459b0f53b5a68e12467f93640490412bf370bf24f2d2",
+      "size": 15086,
+      "role": "reference/configuration"
+    },
+    {
+      "path": "evaluation/expanded/results_0.1.4/coverage.json",
+      "sha256": "761784e4fa80c082f4d66aca71d02c16d2c246539f4e3c9d4235fc46aeab491f",
+      "size": 1923,
+      "role": "reference/configuration"
+    },
+    {
+      "path": "evaluation/scripts/baseline_prepare.py",
+      "sha256": "e2bceac70594da2924ff2793a8794ec96119bee837833e28818cb8a36eeb4a83",
+      "size": 7871,
+      "role": "reference/configuration"
+    },
+    {
+      "path": "evaluation/scripts/nada_group_summary.R",
+      "sha256": "66c4fe3a586447f01e0806b6ae18ad44de376e4076dcd3b159a1bc64549adeb3",
+      "size": 2685,
+      "role": "reference/configuration"
+    },
+    {
+      "path": "evaluation/configs/baseline_total.json",
+      "sha256": "146470a43ba6eb3e836336975dd720b732ded32d51013d5f29f56136e468903c",
+      "size": 227,
+      "role": "reference/configuration"
+    },
+    {
+      "path": "evaluation/configs/baseline_dissolved.json",
+      "sha256": "9ae0ac3060ec9b71f40956f7737f31347e60d5a26fbcd25400da1732ada19a01",
+      "size": 231,
+      "role": "reference/configuration"
+    },
+    {
+      "path": "evaluation/expanded/data/illinois_atrazine_2022.csv",
+      "sha256": "746999b83122bb43aa9cda58ae53070c9ce110e82eeca265c56c3227cadbe955",
+      "size": 114481,
+      "role": "held-out input"
+    },
+    {
+      "path": "evaluation/expanded/data/indiana_metolachlor_2022.csv",
+      "sha256": "7a597ab9d3588eb43db0efce36cb72c19e6c3adb488a0ef970bb0c305a7f7c05",
+      "size": 149433,
+      "role": "held-out input"
+    },
+    {
+      "path": "evaluation/expanded/data/minnesota_24_d_2022.csv",
+      "sha256": "a642b558d4092603b10779f131ac1c9dbe1db6c27fbe5c3ce78eb291693ec648",
+      "size": 515716,
+      "role": "held-out input"
+    },
+    {
+      "path": "evaluation/expanded/data/wisconsin_metolachlor_2022.csv",
+      "sha256": "107cc0fef74eda3fe64858fafb41cf38d33e8beefa93177c6afc2d9c02e94b53",
+      "size": 274107,
+      "role": "held-out input"
+    },
+    {
+      "path": "evaluation/expanded/data/mississippi_atrazine_2022.csv",
+      "sha256": "77b783d753bd1c3f167606b1d00f179047ba9ce72d4cb94a724cd006096aa1a2",
+      "size": 40458,
+      "role": "held-out input"
+    },
+    {
+      "path": "evaluation/expanded/policies/reporting_total_P1.json",
+      "sha256": "69875b954152e99a2ce78f8597646ac9a0e9c9aa3512e7872caef3122e1e2d42",
+      "size": 500,
+      "role": "policy"
+    },
+    {
+      "path": "evaluation/expanded/policies/reporting_total_P2.json",
+      "sha256": "7d783d6e2de0c16c979aee60c0d9b289ea6829a2c6c8d99f3ff8c80d22b84f99",
+      "size": 478,
+      "role": "policy"
+    },
+    {
+      "path": "evaluation/expanded/policies/reporting_total_P3.json",
+      "sha256": "9369d7eccce82eba52dddf8d9f7dcb832aecb88fc1adb3ffb379b3aa3edcfbf2",
+      "size": 513,
+      "role": "policy"
+    },
+    {
+      "path": "evaluation/expanded/policies/reporting_total_P4.json",
+      "sha256": "16a3ee45bbb8bf8a83037f0ed8e70030f52156b8aa47bfe816ef306987c7b1cf",
+      "size": 487,
+      "role": "policy"
+    },
+    {
+      "path": "evaluation/expanded/policies/reporting_total_P5.json",
+      "sha256": "36cc8df328b2f820b6635a57b605aa66db5a90dd3a586e0b86a0210d1c79ce8b",
+      "size": 481,
+      "role": "policy"
+    },
+    {
+      "path": "evaluation/expanded/policies/reporting_dissolved_P1.json",
+      "sha256": "c78bea6e7f208ab8e1af9330fa265f93dfd338e89463776a26ff3bde7a5455f6",
+      "size": 508,
+      "role": "policy"
+    },
+    {
+      "path": "evaluation/expanded/policies/reporting_dissolved_P2.json",
+      "sha256": "9b8960a41184b36504d6da419b1040856b74adbbaea34e02d0a1c04cb320e1d2",
+      "size": 486,
+      "role": "policy"
+    },
+    {
+      "path": "evaluation/expanded/policies/reporting_dissolved_P3.json",
+      "sha256": "2553d3f470a22d30549cc1a150c4183f17b86f7ebe02d34649f414609ea68e81",
+      "size": 521,
+      "role": "policy"
+    },
+    {
+      "path": "evaluation/expanded/policies/reporting_dissolved_P4.json",
+      "sha256": "24b7b5c3345f9cbcc9f811b544c633b49e1d593e5887e306d0578efb4dcc6a87",
+      "size": 491,
+      "role": "policy"
+    },
+    {
+      "path": "evaluation/expanded/policies/reporting_dissolved_P5.json",
+      "sha256": "9936ad10cad388914654d53fa1ad210d83180748a5950af4ae410fd62b12a61a",
+      "size": 489,
+      "role": "policy"
+    },
+    {
+      "path": "evaluation/expanded/results_0.1.4/agreement.json",
+      "sha256": "8f4645d72c8e54ebb51ccfa1901eef701e86abb97766a8379c578c903dda899f",
+      "size": 5147,
+      "role": "reference output"
+    }
+  ],
+  "environment": [
+    "Python 3.10+",
+    "R with NADA 1.6-1.2 for downstream stage",
+    "Rscript on PATH"
+  ]
+}

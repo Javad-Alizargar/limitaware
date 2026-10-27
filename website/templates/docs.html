@@ -1,0 +1,21 @@
+{% extends "base.html" %}{% block content %}
+<h1>Installation and use</h1>
+<p>The package is Python 3.10+ and uses only the standard library. The web demo and downstream R checks are separate optional components.</p>
+<pre>python3 -m venv .venv
+. .venv/bin/activate
+pip install .
+limitaware --version
+python -m unittest discover -s tests</pre>
+<h2>Transform an export</h2>
+<pre>limitaware transform result_export.csv \
+  --policy policies/reporting_total.json \
+  --out out/run --force</pre>
+<p>Outputs: <code>canonical.csv</code>, <code>raw_records.csv</code>, one analysis file per (analyte, fraction, method) group, <code>analysis_manifest.json</code>, <code>audit.json</code>, and <code>methods_note.md</code>.</p>
+<h2>Policies</h2>
+<ul>{% for p in policies %}<li><code>{{ p }}</code> — shipped JSON policy; inspect before use.</li>{% endfor %}</ul>
+<p>Policies declare admissible fractions and methods, unit conversions, censoring limit roles, below-LOQ and estimated handling, duplicates, QC, and whether detected results require limits. The tool ranks no policy.</p>
+<h2>Input profile</h2>
+<p>The supported profile is the WQP <code>Result/search</code> CSV with the limit inline. One file is sufficient; a separate limits export cannot be joined unambiguously because the result export has no <code>ResultIdentifier</code>.</p>
+<h2>Demo limits</h2>
+<p>Uploads are limited to 2 MB, parsed as CSV only, never executed. Each request uses a temporary directory that is deleted before the response is returned. Output archives are kept in memory for at most 10 minutes so the download link works; they are not logged. Do not upload confidential data.</p>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}{% block content %}
+<h1>Worked example</h1>
+<p>Illinois row 70 is a <code>DL</code> record with no result value. The condition is <code>Not Detected</code>; the inline limit is <code>0.1 ug/L</code> of type <code>Minimum Reporting Level</code>; the fraction is Total and the method is 8141.</p>
+<table><tr><th>Step</th><th>Result</th></tr>
+<tr><td>Documented semantics</td><td><code>DL</code> documents non-detection; <code>Minimum Reporting Level</code> is a reporting-limit role.</td></tr>
+<tr><td>Policy</td><td><code>reporting_total</code> admits reporting limits as censoring thresholds.</td></tr>
+<tr><td>Canonical record</td><td>status <code>eligible</code>, censored TRUE, observation 0.1 ug/L.</td></tr>
+<tr><td>Group</td><td><code>Atrazine/Total/8141</code>.</td></tr>
+<tr><td>Audit</td><td>Input SHA-256, policy, source row and counts are recorded.</td></tr></table>
+<div class="warn"><strong>Bound caveat.</strong> The inline reporting limit is at or above the unavailable method detection limit for this record. Censoring at the reporting limit uses a looser threshold above the unavailable MDL; the magnitude and direction for downstream estimates are not established.</div>
+<p><a class="btn" href="/app">Run this in the demo</a></p>
+{% endblock %}

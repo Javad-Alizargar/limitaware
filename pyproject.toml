@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "limitaware"
+version = "0.1.4"
+description = "Provenance-preserving preparation of Water Quality Portal result exports with explicit interpretation policies"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Javad Alizargar", email = "8javad@ntunhs.edu.tw"}]
+dependencies = []
+
+[project.scripts]
+limitaware = "limitaware.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

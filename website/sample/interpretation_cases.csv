@@ -1,0 +1,12 @@
+case_id,OrganizationIdentifier,ActivityIdentifier,ActivityTypeCode,CharacteristicName,ResultSampleFractionText,ResultMeasureValue,ResultMeasure/MeasureUnitCode,ResultDetectionConditionText,MeasureQualifierCode,ResultAnalyticalMethod/MethodIdentifier,DetectionQuantitationLimitTypeName,DetectionQuantitationLimitMeasure/MeasureValue,DetectionQuantitationLimitMeasure/MeasureUnitCode
+C01,ORG,ACT-QC,Quality Control Sample-Field Replicate,Atrazine,Total,0.1,ug/L,,,8270C,Reporting limit by DQCALC,0.1,ug/L
+C02,ORG,ACT-GT, Sample-Routine,Atrazine,Total,>0.1,ug/L,,,8270C,Reporting limit by DQCALC,0.1,ug/L
+C03,ORG,ACT-DL,Sample-Routine,Atrazine,Total,0.1,ug/L,,DL,8270C,Reporting limit by DQCALC,0.1,ug/L
+C04,ORG,ACT-NAN,Sample-Routine,Atrazine,Total,NaN,ug/L,,,8270C,Reporting limit by DQCALC,0.1,ug/L
+C05,ORG,ACT-CONF,Sample-Routine,Atrazine,Total,<0.1,ug/L,,,8270C,Reporting limit by DQCALC,0.5,ug/L
+C06,ORG,ACT-J,Sample-Routine,Atrazine,Total,0.24,ug/L,,J,8270C,Reporting limit by DQCALC,0.1,ug/L
+C07,ORG,ACT-R,Sample-Routine,Atrazine,Total,0.3,ug/L,,R,8270C,Reporting limit by DQCALC,0.1,ug/L
+C08,ORG,ACT-INT,Sample-Routine,Atrazine,Total,"[0.1,0.2]",ug/L,,,8270C,Reporting limit by DQCALC,0.1,ug/L
+C09,ORG,ACT-ND,Sample-Routine,Atrazine,Total,,ug/L,Not Detected,,8270C,Reporting limit by DQCALC,0.1,ug/L
+C10,ORG,ACT-OK,Sample-Routine,Atrazine,Total,0.2,ug/L,,,8270C,Reporting limit by DQCALC,0.1,ug/L
+C11,ORG,ACT-DL,Sample-Routine,Atrazine,Total,0.1,ug/L,,DL,8270C,Reporting limit by DQCALC,,

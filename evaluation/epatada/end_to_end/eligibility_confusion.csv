@@ -1,0 +1,9 @@
+export,rows,both_eligible,limitaware_only,epatada_unmatched_only,neither_eligible,total
+illinois,256,181,0,0,75,256
+indiana,357,55,0,0,302,357
+minnesota,735,630,0,0,105,735
+wisconsin,368,265,0,0,103,368
+mississippi,59,52,0,0,7,59
+iowa,933,228,9,33,663,933
+new_york,140,120,0,0,20,140
+ohio,27,13,0,0,14,27

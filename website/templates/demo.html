@@ -1,0 +1,18 @@
+{% extends "base.html" %}{% block content %}
+<h1>Run the demo</h1>
+<p>Upload a supported WQP result CSV (≤2 MB) or load the included 11-row example. The server imports the installed LimitAware package and writes canonical, grouped, audit and raw-record outputs to a temporary directory.</p>
+{% if error %}<p class="error">{{ error }}</p>{% endif %}
+<form method="post" action="/app" enctype="multipart/form-data" class="card">
+<label for="file">WQP result CSV</label>
+<input id="file" name="file" type="file" accept=".csv,text/csv">
+<label for="policy">Policy</label>
+<select id="policy" name="policy">{% for p in policies %}<option value="{{ p }}">{{ p }}</option>{% endfor %}</select>
+<button class="btn" type="submit">Analyse</button>
+</form>
+<form method="post" action="/app" class="card">
+<input type="hidden" name="use_sample" value="1">
+<input type="hidden" name="policy" value="reporting_total">
+<button class="btn" type="submit">Load included example</button>
+</form>
+<div class="notice"><strong>Processing and retention:</strong> uploads are parsed as CSV only and never executed. Temporary directories are deleted before the response. The output ZIP is held in memory for at most 10 minutes so the download works, and is not logged. Do not upload confidential data.</div>
+{% endblock %}

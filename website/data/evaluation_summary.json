@@ -1,0 +1,27 @@
+{
+  "illinois": {
+    "rows": 256,
+    "eligible": 181,
+    "unresolved": 0
+  },
+  "indiana": {
+    "rows": 357,
+    "eligible": 55,
+    "unresolved": 0
+  },
+  "minnesota": {
+    "rows": 735,
+    "eligible": 630,
+    "unresolved": 0
+  },
+  "wisconsin": {
+    "rows": 368,
+    "eligible": 265,
+    "unresolved": 103
+  },
+  "mississippi": {
+    "rows": 59,
+    "eligible": 52,
+    "unresolved": 0
+  }
+}

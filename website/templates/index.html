@@ -1,0 +1,12 @@
+{% extends "base.html" %}{% block content %}
+<h1>Traceable preparation of water-quality measurements</h1>
+<p class="lead">LimitAware turns a Water Quality Portal result export into a canonical table, grouped analysis inputs with explicit censoring, and an audit record — before any censored-data estimator is applied.</p>
+<div class="notice"><strong>Living website.</strong> The evaluated software release is the immutable archive, not this website. This site runs the same installed package as a demonstration.</div>
+<div class="grid">
+  <div class="card"><h2>What it does</h2><p>Applies documented WQX vocabulary and a versioned JSON policy per row; preserves limit roles, fractions, methods and refusals; writes per-group analysis files and provenance.</p></div>
+  <div class="card"><h2>What it does not do</h2><p>It does not estimate concentrations, rank policies, or claim regulatory or clinical authority. It is a preparation layer for NADA, EnvStats, ProUCL or similar tools.</p></div>
+  <div class="card"><h2>Try it</h2><p>Upload a supported WQP result CSV (≤2 MB) or load the included example and inspect eligible, excluded and unresolved rows.</p><p><a class="btn" href="/app">Open the demo</a></p></div>
+</div>
+<h2>Version</h2>
+<p>LimitAware <strong>{{ version }}</strong>. Evaluated release: {{ cfg.evaluated_version }}. Installation, policies and command-line use are documented under <a href="/docs">Docs</a>.</p>
+{% endblock %}

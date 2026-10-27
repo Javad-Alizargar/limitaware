@@ -1,0 +1,16 @@
+case_id,OrganizationIdentifier,ActivityIdentifier,ActivityTypeCode,CharacteristicName,ResultSampleFractionText,ResultMeasureValue,ResultMeasure/MeasureUnitCode,ResultDetectionConditionText,MeasureQualifierCode,ResultValueTypeName,ResultAnalyticalMethod/MethodIdentifier,DetectionQuantitationLimitTypeName,DetectionQuantitationLimitMeasure/MeasureValue,DetectionQuantitationLimitMeasure/MeasureUnitCode,Case_question
+S01,ORG,ACT-S01,Sample-Routine,Atrazine,Total,,ug/L,Not Detected,,Actual,8270C,Lower Reporting Limit,0.1,ug/L,Condition-only non-detect with a numeric reporting limit
+S02,ORG,ACT-S02,Sample-Routine,Atrazine,Total,0.1,ug/L,,DL,Actual,8270C,,,,"DL qualifier and value but no limit"
+S03,ORG,ACT-S03,Sample-Routine,Atrazine,Total,0.05,ug/L,Present Below Quantification Limit,,Actual,8270C,Lower Reporting Limit,0.1,ug/L,Below-LOQ result under the default policy
+S04,ORG,ACT-S04,Sample-Routine,Atrazine,Total,0.2,ug/L,,J,Actual,8270C,,,,"Estimated J result without a limit"
+S05,ORG,ACT-S05,Sample-Routine,Atrazine,Total,,ug/L,Not Detected,,Actual,8270C,Lower Quantitation Limit,0.1,ug/L,LOQ-role censoring under reporting-only policy
+S06,ORG,ACT-S06,Sample-Routine,Atrazine,Total,1000,ng/L,,,Actual,8270C,,,,"Detected value in ng/L"
+S07,ORG,ACT-S07,Sample-Routine,Atrazine,Total,,ug/L,Not Detected,,Actual,8270C,Check with agency,0.1,ug/L,Unknown limit role
+S08,ORG,ACT-S08,Sample-Routine,Atrazine,Total,<0.1,ug/L,,>,Actual,8270C,Lower Reporting Limit,0.1,ug/L,Conflicting embedded and coded qualifiers
+S09,ORG,ACT-S09,Quality Control Sample-Field Replicate,Atrazine,Total,0.1,ug/L,,,Actual,8270C,Lower Reporting Limit,0.1,ug/L,QC activity
+S10,ORG,ACT-S10,Field Msr/Obs,Atrazine,Total,0.1,ug/L,,,Actual,8270C,Lower Reporting Limit,0.1,ug/L,Field measurement activity
+S11,ORG,ACT-S11,Sample-Routine,Atrazine,Dissolved,0.1,ug/L,,,Actual,8270C,,,,"Wrong fraction for total policy"
+S12,ORG,ACT-S12,Sample-Routine,Atrazine,Total,0.25,ug/L,,,Actual,8270C,,,,"Exact detected value"
+S13,ORG,ACT-S13,Sample-Routine,Atrazine,Total,>0.1,ug/L,,,Actual,8270C,Lower Reporting Limit,0.1,ug/L,Right-censored result unsupported by left-censored policy
+S14,ORG,ACT-S14,Sample-Routine,Atrazine,Total,1.0,ug/L,,,Other,8270C,,,,"Non-actual ResultValueTypeName"
+S15,ORG,ACT-S15,Sample-Routine,Atrazine,Total,,ug/L,Detected,,Actual,8270C,,,,"Detected condition with no value"
