@@ -4,7 +4,7 @@
   "tagline": "Traceable preparation of WQP result exports for censored-data analysis",
   "version_source": "installed package",
   "repository_url": "https://github.com/Javad-Alizargar/limitaware",
-  "archive_doi": null,
+  "archive_doi": "10.5281/zenodo.23716463",
   "contact_email": "8javad@ntunhs.edu.tw",
   "evaluated_version": "0.1.4",
   "deployment_note": "Living demo; the evaluated release is the immutable archive, not this website."

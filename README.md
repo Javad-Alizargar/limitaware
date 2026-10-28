@@ -56,7 +56,15 @@ methods are admissible, unit conversion, below-LOQ handling and duplicates. See
 `docs/POLICIES.md`. Policies are not rankings: a stricter policy is not
 scientifically superior.
 
-## Repository
+## Repository and archived release
+
+* Public repository: https://github.com/Javad-Alizargar/limitaware
+* GitHub release: https://github.com/Javad-Alizargar/limitaware/releases/tag/v1.0
+* Zenodo version DOI: https://doi.org/10.5281/zenodo.23716463 (concept DOI:
+  https://doi.org/10.5281/zenodo.23716462)
+* The package metadata version is 0.1.4; the archived publication release is v1.0.
+  Core `src`, tests and policies are byte-identical; packaging/documentation differ.
+
 
 Public software repository: https://github.com/Javad-Alizargar/limitaware
 

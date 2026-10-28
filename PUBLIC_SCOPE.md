@@ -1,6 +1,7 @@
 # Public scope and data availability
 
 Repository: https://github.com/Javad-Alizargar/limitaware
+Archived release: v1.0; version DOI: 10.5281/zenodo.23716463
 
 This repository contains the installable LimitAware 0.1.4 software, tests, policies,
 documentation, website source, examples and public-safe evaluation metadata.
